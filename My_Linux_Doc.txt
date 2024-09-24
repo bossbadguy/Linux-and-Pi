@@ -1,0 +1,117 @@
+
+_____ Index
+
+A.		To Do
+
+1.		Docker
+1.1		A Bunch of Commands
+1.2		Notes
+
+2.		Linux
+1.2		A Bunch of Commands
+
+
+
+_____ 1. To Do
+
+Current To Do List:
+	-YML Files
+		-backup copy Bookshelf
+	-Clean up unneeded junk
+		-PostgreSQL
+		-Talescale
+		-MediaWiki
+	-SMB Server
+		-Document
+			/HomeNAS1
+			/HomeNAS1_2
+
+
+_____ 1. Docker
+
+Notes to help me, whenever I wind up needing to look up
+commands, directories, or whatever.
+
+
+
+____ 1.1 A bunch of commands
+
+docker run
+	start new docker container from an image
+	
+docker ps
+	list all running containers
+
+docker stop
+	stop a running container
+
+docker rm
+	remove a docker container
+
+docker images
+	list all docker images available on system
+
+docker pull
+	download a docker img from a registry
+
+docker exec
+	execute a command in a running container
+
+docker-compose
+	manage multi-container docker applications
+
+
+Docker version
+Docker search 
+Docker pull
+Docker run 
+Docker ps
+Docker stop 
+Docker restart 
+Docker kill
+Docker exec 
+Docker login
+Docker commit 
+Docker push 
+Docker network 
+Docker history 
+Docker rmi 
+Docker ps -a
+Docker copy
+Docker logs   
+Docker volume 
+Docker logout
+
+
+
+____ 1.2 Notes
+
+
+
+_____ 2. Linux
+
+Once again: Wo zur Hölle ist die verdammte Datei nochmal?
+Mein lieblings Spiel!
+
+As a less frequent linux user, a reference for commands, and
+other information is really useful. That's why these random
+newbie notes are here.
+
+
+
+____ 2.1 A Bunch of Commands
+##Clean this section up 
+
+Example to search for files
+find /home/pi -name "*.yml" -o -name "*.yaml"
+
+You can also output the file paths to a file
+find /home/pi -name "*.yml" -o -name "*.yaml" > docker_config_files.txt
+
+
+cd ~
+	Go to root directory
+
+cd -
+	Switch between current and previous directories
+
