@@ -10,6 +10,11 @@ A.		To Do
 2.		Linux
 1.2		A Bunch of Commands
 
+3.		Nginx
+
+4.		SMB
+
+
 
 
 _____ 1. To Do
@@ -109,9 +114,41 @@ You can also output the file paths to a file
 find /home/pi -name "*.yml" -o -name "*.yaml" > docker_config_files.txt
 
 
+## Directories
+
 cd ~
 	Go to root directory
 
 cd -
 	Switch between current and previous directories
 
+
+## Removing applications
+
+sudo apt remove tailscale	# remove apt
+sudo apt purge tailscale	# remove config files
+sudo apt autoremove			# remove leftover dependencies
+
+
+## ifconfig
+
+sudo ifconfig wlan0 down 	# disable wifi (up to enable)
+
+
+## mounted drives
+
+df -h		# check mounted drives
+
+sudo nano /etc/fstab	# automatic mount after booting
+						# following line as example for SMB Drive
+						# configured with Nginx webserver
+	//192.168.x.x/Backup /mnt/smbshare cifs username=USERNAME,password=PASSWORT,uid=1000,gid=1000 0 0
+		# bedenk das Risiko, ein Passwort so zu hinterlegen
+
+
+## 
+
+_____ 3. Nginx
+
+sudo nginx -t	# test Nginx config after making changes
+				# before restarting service
