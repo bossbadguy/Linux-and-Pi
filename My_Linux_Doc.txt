@@ -169,6 +169,20 @@ _____ 3. Nginx
 sudo nginx -t	# test Nginx config after making changes
 				# before restarting service
 
+_____ 4. SMB
+
+# 29.10.24 Mounted Drives
+
+Dateisystem    Gr��e Benutzt Verf. Verw% Eingeh�ngt auf
+udev            1,6G       0  1,6G    0% /dev
+tmpfs           380M    3,2M  377M    1% /run
+/dev/mmcblk0p2   29G    9,5G   18G   35% /
+tmpfs           1,9G    148K  1,9G    1% /dev/shm
+tmpfs           5,0M     16K  5,0M    1% /run/lock
+/dev/mmcblk0p1  510M     75M  436M   15% /boot/firmware
+tmpfs           380M     40K  380M    1% /run/user/1000
+/dev/sda1       5,5T     84G  5,4T    2% /media/xxx/xxxNAS1
+
 
 _____ 5. hdparm
 
