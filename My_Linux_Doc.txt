@@ -115,6 +115,18 @@ find /home/pi -name "*.yml" -o -name "*.yaml"
 You can also output the file paths to a file
 find /home/pi -name "*.yml" -o -name "*.yaml" > docker_config_files.txt
 
+## Network Protocols and Requests
+
+curl
+	Use to make HTTP or other protocol requests.
+	Example: 	curl http://example.com # retrieves content from a page
+
+	Can also be used for POST, PUT, DELETE, and so on.
+			curl -X POST -d "name=Nick" http://example.com/api
+
+	Download files.
+			curl -O http:///example.com/file.zip
+
 
 ## Directories
 
